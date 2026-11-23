@@ -63,6 +63,22 @@ const CANDIDATES: Candidate[] = [
     scores: [1, 1, 0, 2, 0],
     why: "Tied to machines and nothing else: the plainest possible answer, no warmth, no joke, no grandma in it.",
   },
+  // --- Second pass: three new challengers, judged against the same brief. ---
+  {
+    word: "Robo",
+    scores: [2, 2, 1, 2, 1],
+    why: "Grandma shortening the word the way she shortens everything — believable thumb-typing, warm, clearly machine. But it is a label, not a joke: it describes the robot where Beep performs it.",
+  },
+  {
+    word: "Beepboop",
+    scores: [1, 2, 2, 2, 1],
+    why: "The full robot imitation, funnier in isolation than Beep alone — but eight letters of sound effect starts to feel like a performance, less like the single startled word she would actually send.",
+  },
+  {
+    word: "Prayers",
+    scores: [1, 2, 1, 0, 1],
+    why: "Pure grandma — her answer to everything, including AI. Warm and true to her voice, but it would fit any subject at all, so the AI tie the judge weighs is missing entirely.",
+  },
 ];
 
 function score(c: Candidate): number {
